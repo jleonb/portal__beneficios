@@ -1,0 +1,93 @@
+  <!-- bloc-2 -->
+<div class="bloc bgc-white bg-page-background d-bloc bg-repeat" id="bloc-2">
+  <div class="container bloc-sm">
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="destacados" class="owl-carousel text-center">
+          <%= image_tag "1.jpg", :class => "img-frame img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "2.jpg", :class => "img-frame img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "3.jpg", :class => "img-frame img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "4.jpg", :class => "img-frame img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "1.jpg", :class => "img-frame img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "2.jpg", :class => "img-frame img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "3.jpg", :class => "img-frame img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "4.jpg", :class => "img-frame img-responsive center-block", :alt => "img slider" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- bloc-2 END -->
+
+<!-- titulo-ingresar -->
+<div class="bloc bg-page-background bg-repeat bgc-outer-space tc-outer-space d-bloc" id="ver-convenio">
+  <div class="container bloc-sm">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="col-md-6">
+            <%= image_tag @agreement.img1.url, :size => "500x350", :class => "img-frame img-responsive center-block" %><br>
+            <%= image_tag @agreement.img2.url, :size => "500x350", :class => "img-frame img-responsive center-block" %><br>
+            <%= image_tag @agreement.img3.url, :size => "500x350", :class => "img-frame img-responsive center-block" %><br>
+            <%= image_tag @agreement.img4.url, :size => "500x350", :class => "img-frame img-responsive center-block" %><br>
+            <%= image_tag @agreement.img5.url, :size => "500x350", :class => "img-frame img-responsive center-block" %><br>
+        </div>
+        <div class="col-md-6">
+          <h3 class="tc-outer-space">
+          <%= @agreement.name %>
+          </h3>
+          <%= simple_format(@agreement.description) %><br>
+
+          <%= fa_icon "map-marker"%>
+          <%= @agreement.address %><br><br>
+
+          <%= fa_icon "phone"%>
+          <%= @agreement.phone %><br><br>
+
+          <%= fa_icon "user"%>
+          <%= @agreement.contact %><br><br>
+
+          <%= fa_icon "envelope"%>
+          <%= mail_to @agreement.email, "Enviar Correo", :style => "color: #47454B;" %><br><br>
+
+          <%= fa_icon "globe"%>
+          <%= link_to "Visitar Sitio Web", @agreement.website, :target => "_blank",:class => "tc-outer-space" %><br><br>
+
+          <%= fa_icon "facebook"%>
+          <%= link_to "Facebook", @agreement.facebook, :target => "_blank",:class => "tc-outer-space" %><br><br>
+
+          <%= fa_icon "twitter"%>
+          <%= link_to "Twitter", @agreement.twitter, :target => "_blank",:class => "tc-outer-space" %><br><br>
+
+          <%= fa_icon "instagram"%>
+          <%= link_to "Instagram", @agreement.instagram, :target => "_blank",:class => "tc-outer-space" %><br><br>
+
+          <iframe src="<%= @agreement.url_map %>" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen class="img-frame"></iframe>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% if admin_signed_in? %>
+  <%= link_to 'Edit', edit_agreement_path(@agreement) %>
+<% end %>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $("#destacados").owlCarousel({
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      items: 4,
+      itemsDesktop: [
+        1199, 3
+      ],
+      itemsDesktopSmall: [
+        767, 1
+      ],
+      pagination: false
+    });
+  });
+</script>
+

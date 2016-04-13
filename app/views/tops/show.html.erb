@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @top.name %>
+</p>
+
+<p>
+  <strong>Banner:</strong>
+  <%= @top.banner %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @top.description %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @top.contact %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @top.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @top.email %>
+</p>
+
+<%= link_to 'Edit', edit_top_path(@top) %> |
+<%= link_to 'Back', tops_path %>

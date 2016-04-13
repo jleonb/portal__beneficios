@@ -1,0 +1,1 @@
+json.extract! @agreement, :id, :contract, :category, :banner, :name, :description, :img1, :img2, :img3, :img4, :img5, :address, :phone, :email, :website, :url_map, :facebook, :twitter, :instagram, :contact, :created_at, :updated_at

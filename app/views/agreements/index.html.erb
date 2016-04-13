@@ -1,0 +1,110 @@
+<!-- Slider Principal -->
+<div class="bloc bgc-white bg-page-background d-bloc bg-repeat" id="bloc-2">
+  <div class="container bloc-sm">
+    <div class="col-sm-12 bgc-midnight-blue misconveniostitle">
+      <h4 class="mg-md text-center ">
+        BENEFICIOS DESTACADOS
+      </h4>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="principal" class="owl-carousel text-center">
+          <%= image_tag "slider_pb.jpg", :class => "img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "slider_dropshot.jpg", :class => "img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "slider_ektelon.jpg", :class => "img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "slider_prince.jpg", :class => "img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "slider_dropshot.jpg", :class => "img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "slider_ektelon.jpg", :class => "img-responsive center-block", :alt => "img slider" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Slider Principal END -->
+<!-- Slider Principal -->
+<div class="bloc bgc-white bg-page-background d-bloc bg-repeat" id="bloc-2768">
+  <div class="container bloc-xs">
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="principal768" class="owl-carousel text-center">
+          <%= image_tag "slider_768_3.jpg", :class => "img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "slider_768_2.jpg", :class => "img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "slider_768_4.jpg", :class => "img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "slider_768_1.jpg", :class => "img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "slider_768_2.jpg", :class => "img-responsive center-block", :alt => "img slider" %>
+          <%= image_tag "slider_768_4.jpg", :class => "img-responsive center-block", :alt => "img slider" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Slider Principal END -->
+<!-- bloc-3 -->
+<div class="bloc bgc-white bg-page-background d-bloc bg-repeat" id="bloc-3">
+  <div class="container bloc-md">
+    <div class="row">
+      <h4 class="mg-md text-center ">
+        <strong>BENEFICIOS DESTACADOS</strong>
+      </h4>
+      <div class="col-md-12">
+        <% @agreements.each do |agreement| %>
+        <div class="col-md-3 col-xs-6">
+          <%= link_to agreement do %>
+          <%= image_tag agreement.banner.url(:large), :class => "img-responsive center-block img-frame hvr-grow-shadow" %>
+          <% end %>
+          <br><br>
+          <% if admin_signed_in? %>
+          <%= link_to 'Editar', edit_agreement_path(agreement) %>
+          <%= link_to 'Eliminar', agreement, method: :delete, data: { confirm: 'Estas seguro?' } %>
+          <%= link_to 'Nuevo Convenio', new_agreement_path %>
+          <% end %>
+        </div>
+        <% end %>
+      </div>
+      <div class="see-more text-center">
+      <button class="btn bgc-yellow btn-sq">
+         VER MAS
+      </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- bloc-3 END -->
+<script type="text/javascript">
+$(document).ready(function () {
+$("#principal").owlCarousel({
+autoPlay: 3000, navigation: false, // Show next and prev buttons
+slideSpeed: 300,
+paginationSpeed: 400,
+singleItem: true,
+pagination: false
+});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+$("#principal768").owlCarousel({
+autoPlay: 3000, navigation: false, // Show next and prev buttons
+slideSpeed: 300,
+paginationSpeed: 400,
+singleItem: true,
+pagination: false
+});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+$("#destacados").owlCarousel({
+autoPlay: 3000, //Set AutoPlay to 3 seconds
+items: 4,
+itemsDesktop: [
+1199, 3
+],
+itemsDesktopSmall: [
+979, 3
+],
+pagination: false
+});
+});
+</script>

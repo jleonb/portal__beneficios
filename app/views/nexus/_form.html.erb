@@ -1,0 +1,29 @@
+<%= form_for(@nexu) do |f| %>
+  <% if @nexu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nexu.errors.count, "error") %> prohibited this nexu from being saved:</h2>
+
+      <ul>
+      <% @nexu.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :number %><br>
+    <%= f.text_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label :agreement_contract %><br>
+    <%= f.text_field :agreement_contract %>
+  </div>
+  <div class="field">
+    <%= f.label :user_contract %><br>
+    <%= f.text_field :user_contract %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

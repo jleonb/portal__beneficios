@@ -1,0 +1,104 @@
+<%= form_for(@agreement) do |f| %>
+<% if @agreement.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@agreement.errors.count, "error") %> prohibited this agreement from being saved:</h2>
+  <ul>
+    <% @agreement.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+<!-- n-convenio -->
+<div class="bloc bgc-white bg-page-background d-bloc bg-repeat tc-outer-space" id="n-convenio">
+  <div class="container bloc-sm">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="field">
+          <%= f.label :contract %><br>
+          <%= f.text_field :contract %>
+        </div>
+        <div class="field">
+          <%= f.label :category %><br>
+          <%= f.text_field :category %>
+        </div>
+        <div class="field">
+          <%= f.label :name %><br>
+          <%= f.text_field :name %>
+        </div>
+        <div class="field">
+          <%= f.label :description %><br>
+          <%= f.text_area :description %>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="field">
+          <%= f.label :address %><br>
+          <%= f.text_field :address %>
+        </div>
+        <div class="field">
+          <%= f.label :phone %><br>
+          <%= f.text_field :phone %>
+        </div>
+        <div class="field">
+          <%= f.label :email %><br>
+          <%= f.text_field :email %>
+        </div>
+        <div class="field">
+          <%= f.label :website %><br>
+          <%= f.text_field :website %>
+        </div>
+        <div class="field">
+          <%= f.label :url_map %><br>
+          <%= f.text_field :url_map %>
+        </div>
+        <div class="field">
+          <%= f.label :facebook %><br>
+          <%= f.text_field :facebook %>
+        </div>
+        <div class="field">
+          <%= f.label :twitter %><br>
+          <%= f.text_field :twitter %>
+        </div>
+        <div class="field">
+          <%= f.label :instagram %><br>
+          <%= f.text_field :instagram %>
+        </div>
+        <div class="field">
+          <%= f.label :contact %><br>
+          <%= f.text_field :contact %>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="field">
+          <%= image_tag @agreement.banner.url(:thumb) %>
+          <%= f.file_field :banner %>
+        </div>
+        <div class="field">
+          <%= image_tag @agreement.img1.url(:thumb) %><br>
+          <%= f.file_field :img1 %>
+        </div>
+        <div class="field">
+          <%= image_tag @agreement.img2.url(:thumb) %><br>
+          <%= f.file_field :img2 %>
+        </div>
+        <div class="field">
+          <%= image_tag @agreement.img3.url(:thumb) %><br>
+          <%= f.file_field :img3 %>
+        </div>
+        <div class="field">
+          <%= image_tag @agreement.img4.url(:thumb) %><br>
+          <%= f.file_field :img4 %>
+        </div>
+        <div class="field">
+          <%= image_tag @agreement.img5.url(:thumb) %><br>
+          <%= f.file_field :img5 %>
+        </div>
+      </div>
+        <div class="actions">
+          <%= f.submit "UPDATE", :class => "center-block btn btn-d btn-sq" %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
