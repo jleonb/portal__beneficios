@@ -1,4 +1,3 @@
-source 'https://rubygems.org'
 
 
 gem 'rails', '4.2.5'
@@ -17,11 +16,11 @@ gem 'owlcarousel-rails', '~> 1.1', '>= 1.1.3.3'
 gem 'font-awesome-sass', '~> 4.5.0'
 gem 'font-awesome-rails'
 gem 'rails_real_favicon'
-gem 'google-analytics-rails', '1.1.0
+gem 'google-analytics-rails', '1.1.0'
 
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3', '>= 1.3.11'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
@@ -33,4 +32,3 @@ group :production do
   gem 'pg', '~> 0.18.4'
   gem 'rails_12factor', '~> 0.0.3'
 end
-
