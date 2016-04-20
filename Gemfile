@@ -16,7 +16,7 @@ gem 'owlcarousel-rails', '~> 1.1', '>= 1.1.3.3'
 gem 'font-awesome-sass', '~> 4.5.0'
 gem 'font-awesome-rails'
 gem 'rails_real_favicon'
-gem 'google-analytics-rails', '1.1.0'
+
 
 
 group :development, :test do
@@ -29,6 +29,7 @@ group :development, :test do
 end
 
 group :production do
+  gem 'google-analytics-rails', '1.1.0'
   gem 'pg', '~> 0.18.4'
   gem 'rails_12factor', '~> 0.0.3'
 end

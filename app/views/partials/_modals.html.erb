@@ -6,30 +6,38 @@
 				<%= image_tag "head_misdatos_2.jpg", :width => "100%", :alt => "header" %>
 			</div>
 			<div class="modal-body">
-				<h4>
-					<strong>Contrato:</strong>
-					<%= @user.contract %>
-				</h4>
-        <h4>
-          <strong>Nº Socio</strong>
-          <%= @user.id %>
-        </h4>
-        <h4>
-					<strong>Rut:</strong>
-					<%= @user.pid %>
-				</h4>
-				<h4>
-					<strong>Nombre:</strong>
-					<%= @user.name %>
-				</h4>
-				<h4>
-					<strong>Teléfono:</strong>
-					<%= @user.phone %>
-				</h4>
-				<h4>
-					<strong>Empresa:</strong>
-					<%= @user.company %>
-				</h4>
+				<div class="row">
+					<div class="col-md-6">
+						<h4>
+						<strong>Contrato:</strong>
+						<%= @user.contract %>
+						</h4>
+						<h4>
+						<strong>Nº Socio</strong>
+						<%= @user.id %>
+						</h4>
+						<h4>
+						<strong>Rut:</strong>
+						<%= @user.pid %>
+						</h4>
+						<h4>
+						<strong>Nombre:</strong>
+						<%= @user.name %>
+						</h4>
+						<h4>
+						<strong>Teléfono:</strong>
+						<%= @user.phone %>
+						</h4>
+						<h4>
+						<strong>Empresa:</strong>
+						<%= @user.company %>
+						</h4>
+					</div>
+					<div class="col-md-6 text-center">
+						<%= image_tag "webframe.png", :width => "300", :alt => "logo", :class => "img-responsive" %>	
+					</div>
+				</div>
+				
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn bgc-yellow btn-sq" data-dismiss="modal">CERRAR</button>
