@@ -87,7 +87,7 @@ Rails.application.configure do
   }
 
 # replace this with your tracker code
-GA.tracker = "UA-56419301-10"
+GA.tracker = "UA-56419301-22"
 
 
 end
