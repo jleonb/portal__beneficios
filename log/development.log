@@ -32349,3 +32349,71 @@ Started GET "/assets/newsletter-355b3b4cca4aac82358493d493a459b4911c377463800c50
 
 
 Started GET "/assets/page-background-5748e5c9af6f11660b3bd11cda1bc9d5c77cd2a6348e5e81b5e1a78bf10e5685.png" for ::1 at 2016-04-13 16:56:02 -0300
+
+
+Started GET "/" for ::1 at 2016-04-20 10:07:23 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AgreementsController#index as HTML
+  [1m[35mAgreement Load (0.5ms)[0m  SELECT "agreements".* FROM "agreements"
+  Rendered agreements/index.html.erb within layouts/application (7137.4ms)
+Completed 200 OK in 7424ms (Views: 7388.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-80be94125575b66ea3429c9007482d334c0730fa5799f763f169beee5963a0fa.css?body=1" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/analytics.self-70b33b6e190f5caaba816defd89173f2053356d381080b2e11a64c2578f732d0.js?body=1" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/slider_dropshot-9adfa99341d163aa7a5d50064cbbf1f78c6c2cfa263821108265aa5547b77585.jpg" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/slider_ektelon-1e24f2e253177c6a94eb72fb599a623816cbebf2b83d0c24d9d6414c2e7c0fb1.jpg" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/logo-52f365618207687f9e360e1147d8f0ddbc770b8f2adf9aa83df40d7c302d033a.png" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/slider_768_2-5039220537dd0c1dfb1bded36aaa8d39b0e7f899c7cb9f0f2972aa977b9f2ebf.jpg" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/slider_prince-4185833fa5a170c0b5b4ded7a1f4f675154754aff9d6e21da0ac81cafd36ed66.jpg" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/slider_768_3-c15887efda0a669dd1d3672237ee89666640e04a5c50444effb862bfa7d2621f.jpg" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/slider_768_4-0fd6b6a85d79e43fc44f48a7cba4378582d637053d28b46803093ce91ddf2502.jpg" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/logo_footer-d4b82c895afe2ad96400faa7d6e49917db301504e3aea1c4c981debfb0423db4.png" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/slider_768_1-0d53c6c8054e0a635ac0c61f1d5dda499cb7f436760371ce8e85b24e46de7e55.jpg" for ::1 at 2016-04-20 10:07:31 -0300
+
+
+Started GET "/assets/page-background-5748e5c9af6f11660b3bd11cda1bc9d5c77cd2a6348e5e81b5e1a78bf10e5685.png" for ::1 at 2016-04-20 10:07:31 -0300

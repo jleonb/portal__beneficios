@@ -16,4 +16,3 @@
 //= require owl.carousel
 //= require_tree .
 //= require bootstrap
-//= require analytics
