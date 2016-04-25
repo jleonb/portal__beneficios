@@ -1,9 +1,9 @@
-<!-- USER DATA -->
+<!-- CREDENCIAL DATA -->
 <div class="modal fade" id="user_data" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<%= image_tag "head_misdatos_2.jpg", :width => "100%", :alt => "header" %>
+				<%= image_tag @user.logo, :width => "100%", :alt => "header" %>
 			</div>
 			<div class="modal-body">
 				<div class="row">
@@ -45,6 +45,8 @@
 		</div>
 	</div>
 </div>
+
+
 <!-- NEWSLETTER -->
 <div class="modal fade" id="newsletter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
@@ -58,3 +60,23 @@
 		</div>
 	</div>
 </div>
+
+
+<div class="modal fade" id="newsletter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<%= image_tag "newsletter.jpg", :width => "100%", :alt => "newsletter" %>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn bgc-yellow btn-sq" data-dismiss="modal">CERRAR</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
