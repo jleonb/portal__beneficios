@@ -33446,3 +33446,52 @@ NoMethodError - undefined method `each' for nil:NilClass:
 
 
 Started POST "/__better_errors/16ecfc4b2e3dd3e5/variables" for ::1 at 2016-04-21 13:05:44 -0300
+
+
+Started GET "/" for ::1 at 2016-04-26 15:40:27 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AgreementsController#index as HTML
+  [1m[35mAgreement Load (1.1ms)[0m  SELECT "agreements".* FROM "agreements"
+  Rendered agreements/index.html.erb within layouts/application (853.7ms)
+Completed 200 OK in 1434ms (Views: 1396.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 15:40:29 -0300
+Processing by AgreementsController#index as HTML
+  [1m[36mAgreement Load (0.2ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 128ms (Views: 126.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-04-26 15:40:29 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-04-26 15:40:29 -0300
+
+
+Started GET "/assets/application.self-82db914ebe3ea2d7b117ae6d4e5827a5eea3f3411f66d63e782d35c4570996b0.css?body=1" for ::1 at 2016-04-26 15:40:29 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-26 15:40:29 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-04-26 15:40:29 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-04-26 15:40:29 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-26 15:40:29 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-26 15:40:29 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-26 15:40:29 -0300
+
+
+Started GET "/users/sign_in" for ::1 at 2016-04-26 15:40:33 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 166ms (Views: 143.9ms | ActiveRecord: 0.8ms)

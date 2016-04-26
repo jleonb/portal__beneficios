@@ -125,4 +125,7 @@
       <index name="index_users_on_email" unique="true" columns="email"/>
     </table>
   </data-source>
+  <data-source name="Rails Portal Beneficios: development" uuid="c413edcc-d58a-44b7-8be8-8f112b13ab01">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>
