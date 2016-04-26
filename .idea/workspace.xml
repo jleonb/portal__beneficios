@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6942a435-236a-4a79-86c7-dae4832a3cca" name="Default" comment="" />
+    <list default="true" id="6942a435-236a-4a79-86c7-dae4832a3cca" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/bg-credencial.png" afterPath="$PROJECT_DIR$/app/assets/images/bg-credencial.png" />
+    </list>
     <ignored path="pbv3.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -347,12 +349,12 @@
       <workItem from="1461610346040" duration="468000" />
       <workItem from="1461630630140" duration="1157000" />
       <workItem from="1461694703738" duration="25000" />
-      <workItem from="1461694780613" duration="2763000" />
+      <workItem from="1461694780613" duration="2841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4413000" />
+    <option name="totallyTimeSpent" value="4491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
