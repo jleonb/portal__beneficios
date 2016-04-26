@@ -394,7 +394,8 @@ iframe{
 	background-image: image-url('page-background.png');
 }
 .bg-credencial{
-  background-image: image-url('bg-credencial.jpg');
+    background-image: image-url('bg-credencial.jpg');
+    background-size: cover;
 }
 
 /* Text colour styles */
