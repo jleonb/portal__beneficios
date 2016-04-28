@@ -394,7 +394,7 @@ iframe{
 	background-image: image-url('page-background.png');
 }
 .bg-credencial{
-    background-image: image-url('bg-credencial.png');
+    background-image: image-url('bg-credencial_2.png');
     background-size: cover;
 }
 
@@ -763,4 +763,8 @@ a {
 .modal-footer {
   padding-top: 3px;
   padding-bottom: 3px;
+}
+.col-xs-6 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
