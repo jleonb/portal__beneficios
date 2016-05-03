@@ -394,8 +394,9 @@ iframe{
 	background-image: image-url('page-background.png');
 }
 .bg-credencial{
-    background-image: image-url('bg-credencial_2.png');
-    background-size: cover;
+    background-image: image-url('bg-credencial_4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* Text colour styles */
@@ -763,8 +764,4 @@ a {
 .modal-footer {
   padding-top: 3px;
   padding-bottom: 3px;
-}
-div .col-md-3 .col-xs-6 {
-  padding-left: 2px;
-  padding-right: 2px;
 }

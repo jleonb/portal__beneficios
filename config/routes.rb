@@ -8,4 +8,8 @@ Rails.application.routes.draw do
 
   root 'agreements#index'
 
+  devise_scope :user do
+    get '/users/edit', :to => 'users#edit'
+  end
+
 end

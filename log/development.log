@@ -34011,3 +34011,1058 @@ Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a
 
 
 Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-28 18:25:09 -0300
+
+
+Started GET "/" for ::1 at 2016-04-29 12:54:52 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AgreementsController#index as HTML
+  [1m[35mAgreement Load (2.2ms)[0m  SELECT "agreements".* FROM "agreements"
+  Rendered agreements/index.html.erb within layouts/application (1007.6ms)
+Completed 200 OK in 1662ms (Views: 1619.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 12:54:54 -0300
+Processing by AgreementsController#index as HTML
+  [1m[36mAgreement Load (0.3ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (48.6ms)
+Completed 200 OK in 207ms (Views: 204.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f2165257406adf2686b0e3aa24715102be352c2273276c54a0d441cd4afe3f38.css?body=1" for ::1 at 2016-04-29 12:54:54 -0300
+
+
+Started GET "/users/sign_in" for ::1 at 2016-04-29 12:54:57 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 168ms (Views: 139.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-04-29 12:55:10 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"11pLTeiOPROJmvA47wj4nvq2v8Si4dKqA+xHTMaPm4o/qDU/N7J6aOUbT7uznyq3OtSDJOltlwDqlrv4Nsbt9w==", "user"=>{"email"=>"usuario@portalbeneficios.cl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"INGRESAR"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "usuario@portalbeneficios.cl"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-04-28 21:17:49.756156"], ["current_sign_in_at", "2016-04-29 15:55:10.217742"], ["sign_in_count", 21], ["updated_at", "2016-04-29 15:55:10.219001"], ["id", 1]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 168ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 12:55:10 -0300
+Processing by AgreementsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mAgreement Load (0.2ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (34.4ms)
+  [1m[35mAgreement Load (0.2ms)[0m  SELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC
+  Rendered partials/_modals.html.erb (8.6ms)
+Completed 200 OK in 126ms (Views: 122.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 12:55:56 -0300
+Processing by AgreementsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mAgreement Load (0.4ms)[0m  SELECT "agreements".* FROM "agreements"
+  Rendered agreements/index.html.erb within layouts/application (35.1ms)
+  [1m[36mAgreement Load (0.3ms)[0m  [1mSELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC[0m
+  Rendered partials/_modals.html.erb (6.3ms)
+Completed 200 OK in 131ms (Views: 128.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-f2165257406adf2686b0e3aa24715102be352c2273276c54a0d441cd4afe3f38.css?body=1" for ::1 at 2016-04-29 12:55:56 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-04-29 12:55:56 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-29 12:55:56 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:55:56 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-04-29 12:55:56 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-04-29 12:55:56 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-04-29 12:55:56 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-04-29 12:55:56 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:55:56 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:55:56 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:55:56 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-29 12:55:56 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-29 12:55:56 -0300
+
+
+Started GET "/" for ::1 at 2016-04-29 12:56:27 -0300
+Processing by AgreementsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mAgreement Load (0.2ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (23.9ms)
+  [1m[35mAgreement Load (0.2ms)[0m  SELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC
+  Rendered partials/_modals.html.erb (5.1ms)
+Completed 200 OK in 110ms (Views: 107.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-04-29 12:56:27 -0300
+
+
+Started GET "/assets/application.self-f2165257406adf2686b0e3aa24715102be352c2273276c54a0d441cd4afe3f38.css?body=1" for ::1 at 2016-04-29 12:56:27 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-29 12:56:27 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-04-29 12:56:27 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:56:27 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-04-29 12:56:27 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-04-29 12:56:27 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-04-29 12:56:27 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:56:27 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:56:27 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:56:27 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-29 12:56:27 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-29 12:56:27 -0300
+
+
+Started GET "/" for ::1 at 2016-04-29 12:56:40 -0300
+Processing by AgreementsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mAgreement Load (0.2ms)[0m  SELECT "agreements".* FROM "agreements"
+  Rendered agreements/index.html.erb within layouts/application (29.2ms)
+  [1m[36mAgreement Load (0.2ms)[0m  [1mSELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC[0m
+  Rendered partials/_modals.html.erb (8.1ms)
+Completed 200 OK in 132ms (Views: 128.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-04-29 12:56:40 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:56:40 -0300
+
+
+Started GET "/assets/application.self-f2165257406adf2686b0e3aa24715102be352c2273276c54a0d441cd4afe3f38.css?body=1" for ::1 at 2016-04-29 12:56:40 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-04-29 12:56:40 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-29 12:56:40 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-04-29 12:56:40 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-04-29 12:56:40 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-04-29 12:56:40 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:56:40 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:56:40 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:56:40 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-29 12:56:40 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-29 12:56:40 -0300
+
+
+Started GET "/" for ::1 at 2016-04-29 12:57:51 -0300
+Processing by AgreementsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mAgreement Load (0.2ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (32.0ms)
+  [1m[35mAgreement Load (0.2ms)[0m  SELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC
+  Rendered partials/_modals.html.erb (4.8ms)
+Completed 200 OK in 136ms (Views: 133.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 12:58:27 -0300
+Processing by AgreementsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mAgreement Load (0.2ms)[0m  SELECT "agreements".* FROM "agreements"
+  Rendered agreements/index.html.erb within layouts/application (33.0ms)
+  [1m[36mAgreement Load (0.2ms)[0m  [1mSELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC[0m
+  Rendered partials/_modals.html.erb (6.7ms)
+Completed 200 OK in 137ms (Views: 135.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-f2165257406adf2686b0e3aa24715102be352c2273276c54a0d441cd4afe3f38.css?body=1" for ::1 at 2016-04-29 12:58:27 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-29 12:58:27 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-04-29 12:58:27 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:58:27 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-04-29 12:58:27 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-04-29 12:58:27 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-04-29 12:58:27 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-04-29 12:58:28 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:58:28 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:58:28 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-29 12:58:28 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-29 12:58:28 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 12:58:28 -0300
+
+
+Started GET "/" for ::1 at 2016-04-29 12:58:38 -0300
+Processing by AgreementsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mAgreement Load (0.2ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (31.5ms)
+  [1m[35mAgreement Load (0.2ms)[0m  SELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC
+  Rendered partials/_modals.html.erb (4.5ms)
+Completed 200 OK in 126ms (Views: 122.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 13:01:54 -0300
+Processing by AgreementsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mAgreement Load (0.3ms)[0m  SELECT "agreements".* FROM "agreements"
+  Rendered agreements/index.html.erb within layouts/application (35.5ms)
+  [1m[36mAgreement Load (0.3ms)[0m  [1mSELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC[0m
+  Rendered partials/_modals.html.erb (7.6ms)
+Completed 200 OK in 3651ms (Views: 3648.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-bad74ca4cda3d4e3b35a0dfc7f03f405259bc33b65745f2bd35eb4cf214a6e27.css?body=1" for ::1 at 2016-04-29 13:01:57 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-04-29 13:01:58 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 13:01:58 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-29 13:01:58 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-04-29 13:01:58 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-04-29 13:01:58 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-04-29 13:01:58 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-04-29 13:01:58 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 13:01:58 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 13:01:58 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 13:01:58 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-29 13:01:58 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-29 13:01:58 -0300
+
+
+Started GET "/" for ::1 at 2016-04-29 13:02:15 -0300
+Processing by AgreementsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mAgreement Load (0.2ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (43.3ms)
+  [1m[35mAgreement Load (0.1ms)[0m  SELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC
+  Rendered partials/_modals.html.erb (7.9ms)
+Completed 200 OK in 3113ms (Views: 3107.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c16cdb13f73833a397588e3d947e95e7e18a46645cbd8c17ceaaf5b00169b126.css?body=1" for ::1 at 2016-04-29 13:02:18 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-04-29 13:02:18 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-04-29 13:02:18 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-04-29 13:02:18 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-29 13:02:18 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 13:02:18 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-04-29 13:02:18 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-04-29 13:02:18 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 13:02:18 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 13:02:18 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 13:02:18 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-29 13:02:18 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-29 13:02:18 -0300
+
+
+Started GET "/" for ::1 at 2016-04-29 13:02:51 -0300
+Processing by AgreementsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mAgreement Load (0.2ms)[0m  SELECT "agreements".* FROM "agreements"
+  Rendered agreements/index.html.erb within layouts/application (53.6ms)
+  [1m[36mAgreement Load (0.2ms)[0m  [1mSELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC[0m
+  Rendered partials/_modals.html.erb (8.6ms)
+Completed 200 OK in 3295ms (Views: 3291.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e5f870d3fd994b0c16b2cc579d4f36a7e9240aa3036ea237459125d82c8bef9a.css?body=1" for ::1 at 2016-04-29 13:02:55 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-04-29 13:02:55 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-04-29 13:02:55 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-29 13:02:55 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-04-29 13:02:55 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-04-29 13:02:55 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 13:02:55 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-04-29 13:02:55 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 13:02:55 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 13:02:55 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-29 13:02:55 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-29 13:02:55 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 13:02:55 -0300
+
+
+Started GET "/" for ::1 at 2016-04-30 10:41:58 -0300
+Processing by AgreementsController#index as HTML
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mAgreement Load (1.0ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (84.1ms)
+  [1m[35mAgreement Load (0.6ms)[0m  SELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC
+  Rendered partials/_modals.html.erb (7.6ms)
+Completed 200 OK in 309ms (Views: 262.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.self-e5f870d3fd994b0c16b2cc579d4f36a7e9240aa3036ea237459125d82c8bef9a.css?body=1" for ::1 at 2016-04-30 10:41:58 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-04-30 10:41:58 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-04-30 10:41:58 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-30 10:41:58 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-30 10:41:59 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-04-30 10:41:59 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-04-30 10:41:59 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-30 10:41:59 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-04-30 10:41:59 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-30 10:41:59 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-30 10:41:59 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-30 10:41:59 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-30 10:41:59 -0300
+
+
+Started GET "/" for ::1 at 2016-05-03 11:45:59 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AgreementsController#index as HTML
+  [1m[35mAgreement Load (0.6ms)[0m  SELECT "agreements".* FROM "agreements"
+  Rendered agreements/index.html.erb within layouts/application (658.5ms)
+Completed 200 OK in 855ms (Views: 822.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-05-03 11:46:00 -0300
+Processing by AgreementsController#index as HTML
+  [1m[36mAgreement Load (0.3ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 100ms (Views: 98.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e5f870d3fd994b0c16b2cc579d4f36a7e9240aa3036ea237459125d82c8bef9a.css?body=1" for ::1 at 2016-05-03 11:46:00 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 11:46:00 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-05-03 11:46:00 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-05-03 11:46:00 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-05-03 11:46:00 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-05-03 11:46:00 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 11:46:00 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 11:46:00 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-05-03 11:46:00 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 11:46:01 -0300
+
+
+Started GET "/users/sign_in" for ::1 at 2016-05-03 11:47:36 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (45.3ms)
+Completed 200 OK in 162ms (Views: 143.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-05-03 11:47:47 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OqRdkM2OZzNGuicUCeVYfhqhfUeXjLfE/LT4kVMVjySbfwchXM/O7ewnlctQ/NTSpM/uFxps5iN6zR/AZ+cxVw==", "user"=>{"email"=>"usuario@portalbeneficios.cl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"INGRESAR"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "usuario@portalbeneficios.cl"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-04-29 15:55:10.217742"], ["current_sign_in_at", "2016-05-03 14:47:47.170590"], ["sign_in_count", 22], ["updated_at", "2016-05-03 14:47:47.172682"], ["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 182ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-03 11:47:47 -0300
+Processing by AgreementsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mAgreement Load (0.2ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (38.5ms)
+  [1m[35mAgreement Load (0.2ms)[0m  SELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC
+  Rendered partials/_modals.html.erb (6.2ms)
+Completed 200 OK in 124ms (Views: 120.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for ::1 at 2016-05-03 11:49:08 -0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.4ms)
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/views/layouts/application.html.erb:55:in `_app_views_layouts_application_html_erb___4071020377874621616_70137582832840'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/jaime/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jaime/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaime/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaime/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/c80c8ea46444a0c4/variables" for ::1 at 2016-05-03 11:49:08 -0300
+
+
+Started GET "/" for ::1 at 2016-05-03 12:59:33 -0300
+Processing by AgreementsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mAgreement Load (0.2ms)[0m  SELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC
+  Rendered partials/_menu_full.html.erb (17.9ms)
+  [1m[36mAgreement Load (0.3ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (72.5ms)
+  Rendered partials/_modals.html.erb (8.0ms)
+Completed 200 OK in 308ms (Views: 215.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-05-03 12:59:34 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-05-03 12:59:34 -0300
+
+
+Started GET "/assets/application.self-e5f870d3fd994b0c16b2cc579d4f36a7e9240aa3036ea237459125d82c8bef9a.css?body=1" for ::1 at 2016-05-03 12:59:34 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 12:59:34 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-05-03 12:59:34 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 12:59:34 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 12:59:34 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-05-03 12:59:34 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-05-03 12:59:34 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-05-03 12:59:34 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 12:59:34 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-03 12:59:34 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 12:59:34 -0300
+
+
+Started GET "/" for ::1 at 2016-05-03 13:00:05 -0300
+Processing by AgreementsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mAgreement Load (0.3ms)[0m  [1mSELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC[0m
+  Rendered partials/_menu_full.html.erb (4.8ms)
+  [1m[35mAgreement Load (0.2ms)[0m  SELECT "agreements".* FROM "agreements"
+  Rendered agreements/index.html.erb within layouts/application (51.9ms)
+  Rendered partials/_modals.html.erb (6.6ms)
+Completed 200 OK in 147ms (Views: 143.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e5f870d3fd994b0c16b2cc579d4f36a7e9240aa3036ea237459125d82c8bef9a.css?body=1" for ::1 at 2016-05-03 13:00:05 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-05-03 13:00:05 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 13:00:05 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-05-03 13:00:05 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-05-03 13:00:05 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 13:00:05 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-05-03 13:00:06 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-05-03 13:00:06 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 13:00:06 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 13:00:06 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 13:00:06 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-03 13:00:06 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-05-03 13:00:06 -0300
+
+
+Started GET "/users" for ::1 at 2016-05-03 13:00:11 -0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `filter' for #<UsersController:0x007f945bce0bc0>:
+  app/controllers/users_controller.rb:8:in `index'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jaime/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaime/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaime/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2e5db4cf1c476ac1/variables" for ::1 at 2016-05-03 13:00:11 -0300
+
+
+Started GET "/users/edit" for ::1 at 2016-05-03 13:00:27 -0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (16.9ms)
+  Rendered partials/_modals.html.erb (6.1ms)
+Completed 200 OK in 137ms (Views: 132.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-05-03 13:00:35 -0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (16.1ms)
+  Rendered partials/_modals.html.erb (5.9ms)
+Completed 200 OK in 155ms (Views: 153.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-05-03 13:00:36 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 13:00:36 -0300
+
+
+Started GET "/assets/application.self-e5f870d3fd994b0c16b2cc579d4f36a7e9240aa3036ea237459125d82c8bef9a.css?body=1" for ::1 at 2016-05-03 13:00:36 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-05-03 13:00:36 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-05-03 13:00:36 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 13:00:36 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-05-03 13:00:36 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-05-03 13:00:36 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 13:00:36 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-03 13:00:36 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 13:00:36 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 13:00:36 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-05-03 13:00:36 -0300
+
+
+Started GET "/user/edit" for ::1 at 2016-05-03 13:01:54 -0300
+
+ActionController::RoutingError (No route matches [GET] "/user/edit"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jaime/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaime/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaime/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaime/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/jaime/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /Users/jaime/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.7ms)
+  Rendered /Users/jaime/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/jaime/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (143.3ms)
+  Rendered /Users/jaime/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/jaime/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jaime/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jaime/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jaime/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (86.4ms)
+  Rendered /Users/jaime/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jaime/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jaime/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (164.8ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-05-03 13:02:00 -0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (12.1ms)
+  Rendered partials/_modals.html.erb (5.7ms)
+Completed 200 OK in 134ms (Views: 131.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-05-03 13:08:39 -0300
+
+SyntaxError - syntax error, unexpected keyword_end:
+  config/routes.rb:13:in `'
+  activesupport (4.2.5) lib/active_support/dependencies.rb:268:in `block in load'
+  activesupport (4.2.5) lib/active_support/dependencies.rb:240:in `load_dependency'
+  activesupport (4.2.5) lib/active_support/dependencies.rb:268:in `load'
+  railties (4.2.5) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  railties (4.2.5) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  railties (4.2.5) lib/rails/application/routes_reloader.rb:16:in `reload!'
+  railties (4.2.5) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  activesupport (4.2.5) lib/active_support/file_update_checker.rb:75:in `execute'
+  railties (4.2.5) lib/rails/application/routes_reloader.rb:7:in `execute'
+  railties (4.2.5) lib/rails/application/finisher.rb:81:in `block (2 levels) in <module:Finisher>'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:446:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:192:in `block in simple'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_prepare_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:83:in `prepare!'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:71:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jaime/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaime/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaime/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/709fd85384a42d82/variables" for ::1 at 2016-05-03 13:08:39 -0300
+
+
+Started GET "/users/edit" for ::1 at 2016-05-03 13:08:53 -0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.0ms)
+  Rendered partials/_modals.html.erb (5.5ms)
+Completed 200 OK in 117ms (Views: 100.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-05-03 13:08:53 -0300
+
+
+Started GET "/assets/application.self-e5f870d3fd994b0c16b2cc579d4f36a7e9240aa3036ea237459125d82c8bef9a.css?body=1" for ::1 at 2016-05-03 13:08:53 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 13:08:53 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 13:08:53 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-05-03 13:08:53 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-05-03 13:08:53 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-05-03 13:08:53 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-05-03 13:08:53 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 13:08:53 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 13:08:53 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 13:08:53 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-03 13:08:53 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-05-03 13:08:53 -0300
+  [1m[36mUser Load (4.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"

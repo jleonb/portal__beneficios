@@ -11,4 +11,8 @@ class Agreement < ActiveRecord::Base
   validates_attachment_content_type :img4, content_type: /\Aimage\/.*\Z/
   has_attached_file :img5, styles: { large: "500x350>", thumb: "150x150#" }
   validates_attachment_content_type :img5, content_type: /\Aimage\/.*\Z/
+
+
+
+
 end

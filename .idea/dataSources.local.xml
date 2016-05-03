@@ -6,7 +6,6 @@
     </data-source>
     <data-source name="Rails Portal Beneficios: development" uuid="c413edcc-d58a-44b7-8be8-8f112b13ab01">
       <auth-required>false</auth-required>
-      <first-sync>true</first-sync>
     </data-source>
   </component>
 </project>

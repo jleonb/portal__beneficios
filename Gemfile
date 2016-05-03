@@ -16,6 +16,7 @@ gem 'owlcarousel-rails', '~> 1.1', '>= 1.1.3.3'
 gem 'font-awesome-sass', '~> 4.5.0'
 gem 'font-awesome-rails'
 gem 'rails_real_favicon'
+gem 'hirb'
 
 
 
