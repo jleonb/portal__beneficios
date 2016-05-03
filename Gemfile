@@ -15,7 +15,7 @@ gem 'aws-sdk', '< 2.0'
 gem 'owlcarousel-rails', '~> 1.1', '>= 1.1.3.3'
 gem 'font-awesome-sass', '~> 4.5.0'
 gem 'font-awesome-rails'
-gem 'rails_real_favicon'
+
 gem 'hirb'
 
 
@@ -27,6 +27,7 @@ group :development, :test do
   gem 'spring'
   gem 'binding_of_caller'
   gem 'better_errors'
+  gem 'rails_real_favicon'
 end
 
 group :production do

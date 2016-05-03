@@ -1,0 +1,37 @@
+{
+  "master_picture": "app/assets/images/pb.png",
+  "favicon_design": {
+    "ios": {
+      "picture_aspect": "no_change",
+      "app_name": "Portal Beneficios"
+    },
+    "desktop_browser": [
+
+    ],
+    "windows": {
+      "picture_aspect": "no_change",
+      "background_color": "#da532c",
+      "on_conflict": "override",
+      "app_name": "Portal Beneficios"
+    },
+    "android_chrome": {
+      "picture_aspect": "no_change",
+      "theme_color": "#ffffff",
+      "manifest": {
+        "name": "Portal Beneficios",
+        "display": "browser",
+        "orientation": "not_set",
+        "on_conflict": "override",
+        "declared": true
+      }
+    },
+    "safari_pinned_tab": {
+      "picture_aspect": "silhouette",
+      "theme_color": "#5bbad5"
+    }
+  },
+  "settings": {
+    "scaling_algorithm": "Mitchell",
+    "error_on_image_too_small": false
+  }
+}
