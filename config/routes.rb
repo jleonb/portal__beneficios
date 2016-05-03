@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   root 'agreements#index'
 
   devise_scope :user do
-    get '/users/edit', :to => 'users#edit'
+    get 'edit', :to => 'users#edit', as: :login
   end
 
 end
