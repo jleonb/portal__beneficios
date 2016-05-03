@@ -36552,3 +36552,258 @@ Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a
 
 
 Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-05-03 17:20:44 -0300
+
+
+Started GET "/" for ::1 at 2016-05-03 17:35:02 -0300
+Processing by AgreementsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mAgreement Load (1.2ms)[0m  SELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC
+  Rendered partials/_menu_full.html.erb (20.9ms)
+  [1m[36mAgreement Load (1.1ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (117.4ms)
+  Rendered application/_favicon.html.erb (38.2ms)
+  Rendered partials/_modals.html.erb (7.9ms)
+Completed 200 OK in 4603ms (Views: 4574.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-05-03 17:35:07 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-05-03 17:35:07 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:35:07 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 17:35:07 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-05-03 17:35:07 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-05-03 17:35:07 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:35:07 -0300
+
+
+Started GET "/assets/application.self-9dcc03bbf0b3aa256b272fb8902fd72fdf88db5de6b02a58f8a7904dc3d60762.css?body=1" for ::1 at 2016-05-03 17:35:07 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-05-03 17:35:07 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:35:07 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:35:07 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-03 17:35:07 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-05-03 17:35:07 -0300
+
+
+Started GET "/" for ::1 at 2016-05-03 17:35:46 -0300
+Processing by AgreementsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mAgreement Load (0.2ms)[0m  [1mSELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC[0m
+  Rendered partials/_menu_full.html.erb (4.9ms)
+  [1m[35mAgreement Load (0.2ms)[0m  SELECT "agreements".* FROM "agreements"
+  Rendered agreements/index.html.erb within layouts/application (43.2ms)
+  Rendered application/_favicon.html.erb (36.4ms)
+  Rendered partials/_modals.html.erb (7.7ms)
+Completed 200 OK in 198ms (Views: 195.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-9dcc03bbf0b3aa256b272fb8902fd72fdf88db5de6b02a58f8a7904dc3d60762.css?body=1" for ::1 at 2016-05-03 17:35:46 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-05-03 17:35:46 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:35:46 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-05-03 17:35:46 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-05-03 17:35:46 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-05-03 17:35:46 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 17:35:46 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-05-03 17:35:46 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:35:46 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:35:46 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:35:46 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-05-03 17:35:46 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-03 17:35:46 -0300
+
+
+Started GET "/" for ::1 at 2016-05-03 17:37:08 -0300
+Processing by AgreementsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mAgreement Load (0.2ms)[0m  SELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC
+  Rendered partials/_menu_full.html.erb (3.9ms)
+  [1m[36mAgreement Load (0.3ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (33.4ms)
+  Rendered application/_favicon.html.erb (37.8ms)
+  Rendered partials/_modals.html.erb (9.5ms)
+Completed 200 OK in 176ms (Views: 173.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-05-03 17:37:08 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 17:37:08 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-05-03 17:37:08 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-05-03 17:37:08 -0300
+
+
+Started GET "/assets/application.self-9dcc03bbf0b3aa256b272fb8902fd72fdf88db5de6b02a58f8a7904dc3d60762.css?body=1" for ::1 at 2016-05-03 17:37:08 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-05-03 17:37:08 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:37:08 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-05-03 17:37:08 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:37:08 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:37:08 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:37:08 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-03 17:37:08 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-05-03 17:37:08 -0300
+
+
+Started GET "/" for ::1 at 2016-05-03 17:42:35 -0300
+Processing by AgreementsController#index as HTML
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mAgreement Load (0.4ms)[0m  [1mSELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC[0m
+  Rendered partials/_menu_full.html.erb (14.1ms)
+  [1m[35mAgreement Load (0.6ms)[0m  SELECT "agreements".* FROM "agreements"
+  Rendered agreements/index.html.erb within layouts/application (60.5ms)
+  Rendered application/_favicon.html.erb (41.5ms)
+  Rendered partials/_modals.html.erb (218.7ms)
+Completed 200 OK in 717ms (Views: 671.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 17:42:36 -0300
+
+
+Started GET "/assets/application.self-9dcc03bbf0b3aa256b272fb8902fd72fdf88db5de6b02a58f8a7904dc3d60762.css?body=1" for ::1 at 2016-05-03 17:42:36 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-05-03 17:42:36 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-05-03 17:42:36 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-05-03 17:42:36 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-05-03 17:42:36 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:42:36 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-05-03 17:42:36 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:42:36 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:42:36 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:42:36 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-05-03 17:42:36 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-03 17:42:36 -0300
+
+
+Started GET "/" for ::1 at 2016-05-03 17:42:52 -0300
+Processing by AgreementsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mAgreement Load (0.2ms)[0m  SELECT DISTINCT "agreements"."category" FROM "agreements"  ORDER BY "agreements"."category" ASC
+  Rendered partials/_menu_full.html.erb (4.9ms)
+  [1m[36mAgreement Load (0.5ms)[0m  [1mSELECT "agreements".* FROM "agreements"[0m
+  Rendered agreements/index.html.erb within layouts/application (38.8ms)
+  Rendered application/_favicon.html.erb (26.6ms)
+  Rendered partials/_modals.html.erb (11.1ms)
+Completed 200 OK in 178ms (Views: 173.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.self-9dcc03bbf0b3aa256b272fb8902fd72fdf88db5de6b02a58f8a7904dc3d60762.css?body=1" for ::1 at 2016-05-03 17:42:52 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-05-03 17:42:52 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 17:42:52 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-05-03 17:42:52 -0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-05-03 17:42:52 -0300
+
+
+Started GET "/assets/agreements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:42:52 -0300
+
+
+Started GET "/assets/owl.carousel.self-aed126d4aa315202147b9de700e302c5b7f1b68cc8c44a68b116efb60671cd80.js?body=1" for ::1 at 2016-05-03 17:42:52 -0300
+
+
+Started GET "/assets/google_analytics.self-1111ef1f3e2af562907a717bd999e33abbf59d7286208f6cb36a48a72dbc81e5.js?body=1" for ::1 at 2016-05-03 17:42:52 -0300
+
+
+Started GET "/assets/nexus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:42:52 -0300
+
+
+Started GET "/assets/tops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:42:52 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 17:42:52 -0300
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-03 17:42:52 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-05-03 17:42:52 -0300

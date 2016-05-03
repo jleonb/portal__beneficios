@@ -394,9 +394,14 @@ iframe{
 	background-image: image-url('page-background.png');
 }
 .bg-credencial{
-    background-image: image-url('bg-credencial_5.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+  background: rgba(25,25,112,1);
+  background: -moz-linear-gradient(left, rgba(25,25,112,1) 0%, rgba(72,105,240,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(25,25,112,1)), color-stop(100%, rgba(72,105,240,1)));
+  background: -webkit-linear-gradient(left, rgba(25,25,112,1) 0%, rgba(72,105,240,1) 100%);
+  background: -o-linear-gradient(left, rgba(25,25,112,1) 0%, rgba(72,105,240,1) 100%);
+  background: -ms-linear-gradient(left, rgba(25,25,112,1) 0%, rgba(72,105,240,1) 100%);
+  background: linear-gradient(to right, rgba(25,25,112,1) 0%, rgba(72,105,240,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191970', endColorstr='#4869f0', GradientType=1 );
 }
 
 /* Text colour styles */
