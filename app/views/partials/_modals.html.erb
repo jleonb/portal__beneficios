@@ -8,6 +8,7 @@
 			<div class="modal-body bg-credencial">
 				<div class="row">
 					<div class="col-md-6">
+            <%= image_tag "logo_wf.png", :width => "110px", :alt => "logo" %>
 						<h4>
 						<strong>Contrato:</strong>
 						<%= @user.contract %>
@@ -28,16 +29,17 @@
 						<strong>Teléfono:</strong>
 						<%= @user.phone %>
 						</h4>
-						<h4>
+            <h4>
 						<strong>Empresa:</strong>
-						<%= @user.logo %>
+              <%= @user.company %>
 						</h4>
 					</div>
 				</div>
-				
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn bgc-yellow btn-sq" data-dismiss="modal">CERRAR</button>
+				<button type="button" class="btn bgc-yellow btn-sq" data-dismiss="modal">
+          <span class="fa fa-remove fa-fw"></span> CERRAR
+        </button>
 			</div>
 		</div>
 	</div>
