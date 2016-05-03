@@ -57,7 +57,6 @@
           <%= link_to agreement do %>
           <%= image_tag agreement.banner.url(:large), :class => "img-responsive center-block hvr-grow-shadow" %>
           <% end %>
-          <br><br>
           <% if admin_signed_in? %>
           <%= link_to 'Editar', edit_agreement_path(agreement) %>
           <%= link_to 'Eliminar', agreement, method: :delete, data: { confirm: 'Estas seguro?' } %>
