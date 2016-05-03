@@ -4,6 +4,4 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  params[:user].permit(:pid, :name, :phone, :company, :logo)
-
 end
